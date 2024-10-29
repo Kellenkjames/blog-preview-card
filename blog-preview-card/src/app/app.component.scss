@@ -1,0 +1,21 @@
+@import '../styles.scss';
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 21.9rem 52.8rem;
+
+  @media (max-width: $medium-width) {
+    padding: 15rem 30rem;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 10rem 15rem;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 5rem 2rem;
+  }
+}
