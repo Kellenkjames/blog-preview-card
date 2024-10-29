@@ -30,7 +30,6 @@ The project is organized following a modular and scalable approach:
 
 /src ├── app │ ├── components │ │ └── blog-preview │ │ ├── blog-preview.component.html │ │ ├── blog-preview.component.scss │ │ └── blog-preview.component.ts ├── styles │ └── main.scss ├── assets │ └── images
 
-
 ## Setup and Installation
 
 To run this project locally:
