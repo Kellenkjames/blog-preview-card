@@ -35,22 +35,22 @@ The project is organized following a modular and scalable approach:
 
 To run this project locally:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/kellenkjames/blog-preview-card.git
-   ```
+#### 1. Clone the repository:
+```bash
+git clone https://github.com/kellenkjames/blog-preview-card.git
+```
 
-2. Navigate to the project directory:
+#### 2. Navigate to the project directory:
 ```bash
 cd blog-preview-card
 ```
 
-3. Install the dependencies:
+#### 3. Install the dependencies:
 ```bash
 npm install
 ```
 
-4. Start the Angular development server:
+#### 4. Start the Angular development server:
 ```bash
 ng serve
 ```
