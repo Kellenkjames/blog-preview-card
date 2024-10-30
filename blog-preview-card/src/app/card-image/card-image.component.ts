@@ -8,6 +8,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./card-image.component.scss'],
 })
 export class CardImageComponent {
-  @Input() width: number = 336;
-  @Input() height: number = 201;
+  @Input() svgURL!: string;
 }
