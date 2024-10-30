@@ -1,4 +1,8 @@
-<div class="container">
-  <img [src]="authorUrl" alt="Image of {{ authorName }}" />
-  <strong>{{ authorName }}</strong>
+<div class="card-author">
+  <img
+    class="card-author__img"
+    [src]="authorUrl"
+    alt="Image of {{ authorName }}"
+  />
+  <strong class="card-author__name">{{ authorName }}</strong>
 </div>

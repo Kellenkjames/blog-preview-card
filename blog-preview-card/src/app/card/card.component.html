@@ -1,8 +1,10 @@
-<app-card-image [svgURL]="svgURL" />
-<app-card-content
-  [category]="category"
-  [publishDate]="publishDate"
-  [title]="title"
-  [description]="description"
-/>
-<app-card-author [authorUrl]="authorUrl" [authorName]="authorName" />
+<div class="card-container">
+  <app-card-image [svgURL]="svgURL" />
+  <app-card-content
+    [category]="category"
+    [publishDate]="publishDate"
+    [title]="title"
+    [description]="description"
+  />
+  <app-card-author [authorUrl]="authorUrl" [authorName]="authorName" />
+</div>
