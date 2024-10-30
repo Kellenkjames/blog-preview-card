@@ -11,7 +11,6 @@ import { CardImageComponent } from '../card-image/card-image.component';
   styleUrl: './card.component.scss',
 })
 export class CardComponent {
-  imageUrl = '../../assets/images/illustration-article.svg';
   category = 'Learning';
   title = 'HTML & CSS Foundations';
   description =
