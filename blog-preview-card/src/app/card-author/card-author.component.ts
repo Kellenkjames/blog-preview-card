@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './card-author.component.html',
-  styleUrl: './card-author.component.scss',
+  styleUrls: ['./card-author.component.scss'],
 })
 export class CardAuthorComponent {
   @Input() authorName!: string;

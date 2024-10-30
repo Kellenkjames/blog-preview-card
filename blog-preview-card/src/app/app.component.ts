@@ -6,6 +6,6 @@ import { CardComponent } from './card/card.component';
   standalone: true,
   imports: [CardComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {}

@@ -8,13 +8,14 @@ import { CardImageComponent } from '../card-image/card-image.component';
   standalone: true,
   imports: [CardAuthorComponent, CardContentComponent, CardImageComponent],
   templateUrl: './card.component.html',
-  styleUrl: './card.component.scss',
+  styleUrls: ['./card.component.scss'],
 })
 export class CardComponent {
   category = 'Learning';
+  publishDate = '21 Dec 2023';
   title = 'HTML & CSS Foundations';
   description =
     'These languages are the backbone of every website, defining structure, content, and presentation.';
-  authorUrl = '../../assets/images/image-avatar.webp';
+  authorUrl = 'assets/images/image-avatar.webp';
   authorName = 'Greg Hooper';
 }
