@@ -26,6 +26,22 @@ $font-weight-medium: 500;
 $font-weight-bold: 800;
 $line-height: 1.5; // 150%
 
+// Colors
+$color-yellow: hsl(47, 88%, 63%);
+$color-white: hsl(0, 0%, 100%);
+$color-gray-500: hsl(0, 0%, 42%);
+$color-gray-950: hsl(0, 0%, 7%);
+
+// Layout Breakpoints
+$small-mobile-width: 20rem; // 320px (very small mobile devices)
+$mobile-width: 37.5rem; // 375px
+$tablet-width: 48rem; // 768px (tablet)
+$medium-width: 64rem; // 1024px (medium screens)
+$desktop-width: 144rem; // 1440px (desktop)
+
+// Base Font Size
+$font-size-base: 1.6rem; // 16px
+
 // Typography Mixins
 @mixin text-preset-1 {
   font-family: $font-family;
@@ -58,22 +74,6 @@ $line-height: 1.5; // 150%
   line-height: $line-height;
   letter-spacing: 0;
 }
-
-// Colors
-$color-yellow: hsl(47, 88%, 63%);
-$color-white: hsl(0, 0%, 100%);
-$color-gray-500: hsl(0, 0%, 42%);
-$color-gray-950: hsl(0, 0%, 7%);
-
-// Layout Breakpoints
-$small-mobile-width: 20rem; // 320px (very small mobile devices)
-$mobile-width: 37.5rem; // 375px
-$tablet-width: 48rem; // 768px (tablet)
-$medium-width: 64rem; // 1024px (medium screens)
-$desktop-width: 144rem; // 1440px (desktop)
-
-// Base Font Size
-$font-size-base: 1.6rem; // 16px
 
 // Global resets or default styles
 *,
@@ -115,22 +115,45 @@ strong {
   @include text-preset-3-bold;
 }
 
-// Utility classes for margin and padding
-.m-0 {
-  margin: 0;
+// -----------------------------------------------------
+// Spacing Variables
+// -----------------------------------------------------
+
+$spacing-lg: 2.4rem; // 24px
+$spacing-md: 1.2rem; // 12px
+$spacing-sm: 0.8rem; // 8px
+$spacing-xs: 0.4rem; // 4px
+
+// Utility classes for padding
+.p-lg {
+  padding: $spacing-lg;
 }
-.mb-1 {
-  margin-bottom: 0.5rem;
+
+.p-md {
+  padding: $spacing-md;
 }
-.mb-2 {
-  margin-bottom: 1rem;
+
+.p-sm {
+  padding: $spacing-sm;
 }
-.mb-3 {
-  margin-bottom: 1.5rem;
+
+.p-xs {
+  padding: $spacing-xs;
 }
-.p-1 {
-  padding: 0.5rem;
+
+// Utility classes for margin
+.m-lg {
+  margin: $spacing-lg;
 }
-.p-2 {
-  padding: 1rem;
+
+.m-md {
+  margin: $spacing-md;
+}
+
+.m-sm {
+  margin: $spacing-sm;
+}
+
+.m-xs {
+  margin: $spacing-xs;
 }
