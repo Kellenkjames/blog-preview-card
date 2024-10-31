@@ -15,7 +15,7 @@ This project is part of a larger effort to continuously improve frontend develop
 
 Here is a preview of the Blog Preview Card Component:
 
-![Blog Preview Card Screenshot](./blog-preview-card/src/assets/final-screenshot.png)
+![Blog Preview Card Screenshot](./blog-preview-card/src/assets/images/live_screenshot.png)
 
 ## Technologies Used
 
