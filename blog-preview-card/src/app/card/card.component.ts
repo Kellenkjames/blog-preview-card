@@ -14,7 +14,7 @@ export class CardComponent {
   svgURL = 'assets/images/illustration-article.svg';
   category = 'Learning';
   publishDate = '21 Dec 2023';
-  title = 'HTML & CSS Foundations';
+  title = 'HTML & CSS foundations';
   description =
     'These languages are the backbone of every website, defining structure, content, and presentation.';
   authorUrl = 'assets/images/image-avatar.webp';

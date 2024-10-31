@@ -6,4 +6,10 @@
     padding: 0.4rem 1.2rem;
     border-radius: 0.4rem;
   }
+  &__date {
+    @include text-preset-3;
+  }
+  &__description {
+    @include text-preset-2;
+  }
 }
