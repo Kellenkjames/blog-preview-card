@@ -1,4 +1,4 @@
-# Blog Preview Card Component
+# Blog Preview Card
 
 **A clean and modern blog preview card built using Angular, SASS, and TypeScript.**
 
