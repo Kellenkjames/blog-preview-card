@@ -7,6 +7,7 @@ html {
   font-size: 62.5%; // 62.5% of the default 16px = 10px
 }
 
+// Font Face Definitions
 @font-face {
   font-family: 'Figtree';
   font-weight: 500;
@@ -19,10 +20,44 @@ html {
   src: url('./assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
 }
 
-// Typography
+// Typography Variables
 $font-family: 'Figtree', sans-serif;
 $font-weight-medium: 500;
 $font-weight-bold: 800;
+$line-height: 1.5; // 150%
+
+// Typography Mixins
+@mixin text-preset-1 {
+  font-family: $font-family;
+  font-weight: $font-weight-bold;
+  font-size: 2.4rem; // 24px
+  line-height: $line-height;
+  letter-spacing: 0;
+}
+
+@mixin text-preset-2 {
+  font-family: $font-family;
+  font-weight: $font-weight-medium;
+  font-size: 1.6rem; // 16px
+  line-height: $line-height;
+  letter-spacing: 0;
+}
+
+@mixin text-preset-3 {
+  font-family: $font-family;
+  font-weight: $font-weight-medium;
+  font-size: 1.4rem; // 14px
+  line-height: $line-height;
+  letter-spacing: 0;
+}
+
+@mixin text-preset-3-bold {
+  font-family: $font-family;
+  font-weight: $font-weight-bold;
+  font-size: 1.4rem; // 14px
+  line-height: $line-height;
+  letter-spacing: 0;
+}
 
 // Colors
 $color-yellow: hsl(47, 88%, 63%);
@@ -53,11 +88,12 @@ body {
   font-family: $font-family;
   font-size: $font-size-base;
   font-weight: $font-weight-medium;
-  line-height: 1.6;
+  line-height: $line-height;
   color: $color-gray-950;
   background-color: $color-yellow;
 }
 
+// Typography for Headings and Paragraphs
 h1,
 h2,
 h3,
@@ -73,14 +109,10 @@ p {
   color: $color-gray-500;
 }
 
+// Apply text-preset mixins based on the Figma specs
 strong {
   color: $color-gray-950;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  @include text-preset-3-bold;
 }
 
 // Utility classes for margin and padding

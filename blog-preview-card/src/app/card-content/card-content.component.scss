@@ -1,0 +1,9 @@
+@import '../../styles.scss';
+
+.card-content {
+  &__category {
+    background-color: $color-yellow;
+    padding: 0.4rem 1.2rem;
+    border-radius: 0.4rem;
+  }
+}
