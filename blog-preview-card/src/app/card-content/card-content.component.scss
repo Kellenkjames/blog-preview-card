@@ -24,5 +24,6 @@
 
   &__description {
     @include text-preset-2;
+    color: $color-gray-500;
   }
 }
