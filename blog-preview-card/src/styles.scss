@@ -105,6 +105,12 @@ strong {
   @include text-preset-3-bold;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 // -----------------------------------------------------
 // Spacing Variables
 // -----------------------------------------------------

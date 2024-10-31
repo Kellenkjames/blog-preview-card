@@ -1,0 +1,11 @@
+@import '../../styles.scss';
+
+.card-author {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  &__name {
+    @include text-preset-3-bold;
+  }
+}
