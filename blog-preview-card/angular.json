@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "baseHref": "https://kellenkjames.github.io/blog-preview-card/",
             "outputPath": "dist/blog-preview-card",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -87,6 +88,9 @@
             "styles": ["src/styles.scss"],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
